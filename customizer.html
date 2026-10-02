@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STHĒNŌ CUSTOM LAB</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="customizer.css">
+</head>
+<body class="custom-page">
+<header class="site-header custom-header">
+  <a class="brand" href="index.html"><span class="brand-main">STHĒNŌ</span><span class="brand-sub">STUDIO</span></a>
+  <div class="custom-header-center"><span class="eyebrow">STHĒNŌ CUSTOM LAB</span><span>DESIGN · PREVIEW · CREATE</span></div>
+  <div class="header-actions"><a class="back-link" href="index.html">← BACK TO SHOP</a><button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button></div>
+</header>
+<main>
+<section class="custom-hero"><div><p class="eyebrow">01 / YOUR CANVAS</p><h1>DESIGN<br><em>YOUR TEE.</em></h1><p>Choose your garment, upload your artwork and position it exactly where you want it. Preview your design before you order.</p></div><div class="hero-orbit"><span>CREATE</span><span>YOUR</span><span>OWN</span></div></section>
+<section class="designer-shell">
+  <aside class="designer-sidebar">
+    <div class="step-title"><span>01</span><div><small>GARMENT</small><h2>Choose your tee</h2></div></div>
+    <div class="control-block"><label>STYLE</label><div class="style-grid">
+      <button class="style-choice active" data-style="half">HALF<br><small>SLEEVE</small></button>
+      <button class="style-choice" data-style="full">FULL<br><small>SLEEVE</small></button>
+      <button class="style-choice" data-style="oversized">OVERSIZED<br><small>TEE</small></button>
+      <button class="style-choice" data-style="fitness">FITNESS<br><small>TEE</small></button>
+    </div></div>
+    <div class="control-block"><label>COLOUR</label><div class="swatch-row">
+      <button class="swatch active black" data-color="black" aria-label="Black"></button><button class="swatch white" data-color="white" aria-label="White"></button><button class="swatch stone" data-color="stone" aria-label="Stone"></button><button class="swatch grey" data-color="grey" aria-label="Grey"></button>
+    </div></div>
+    <div class="control-block"><label>SIZE</label><div class="size-grid">S M L XL XXL</div><div class="size-buttons"><button class="size active">S</button><button class="size">M</button><button class="size">L</button><button class="size">XL</button><button class="size">XXL</button></div></div>
+    <div class="step-title compact"><span>02</span><div><small>ARTWORK</small><h2>Add your design</h2></div></div>
+    <label class="upload-zone" for="artUpload"><span class="upload-icon">＋</span><strong>UPLOAD IMAGE</strong><small>PNG, JPG, WEBP · FROM YOUR DEVICE</small><input id="artUpload" type="file" accept="image/png,image/jpeg,image/webp"></label>
+    <div class="control-block"><label>PRINT SIDE</label><div class="segmented"><button class="active" data-side="front">FRONT</button><button data-side="back">BACK</button></div></div>
+    <div class="control-block sliders"><label>SIZE <output id="scaleOut">50%</output></label><input id="scale" type="range" min="15" max="85" value="50"><label>ROTATION <output id="rotateOut">0°</output></label><input id="rotate" type="range" min="-180" max="180" value="0"></div>
+    <div class="control-block position-controls"><label>POSITION</label><div><button data-move="up">↑</button><button data-move="left">←</button><button data-move="center">●</button><button data-move="right">→</button><button data-move="down">↓</button></div></div>
+    <button class="reset-button" id="reset">RESET DESIGN</button>
+  </aside>
+  <section class="stage-wrap">
+    <div class="stage-top"><span>LIVE PRODUCT PREVIEW</span><span id="stageMeta">HALF SLEEVE · BLACK · S</span></div>
+    <div class="stage" id="stage"><div class="stage-grid"></div><div class="shirt" id="shirt"><div class="shirt-neck"></div><div class="shirt-print-area"></div><div class="artwork" id="artwork"><img id="artImage" alt="Your uploaded artwork"></div></div><div class="stage-watermark">STHĒNŌ<br><small>CUSTOM LAB</small></div><div class="drag-tip" id="dragTip">DRAG ARTWORK TO POSITION</div></div>
+    <div class="stage-bottom"><div><span class="live-dot"></span> LIVE PREVIEW</div><button id="toggleGrid">GRID / CLEAN</button><button id="savePreview">SAVE PREVIEW</button></div>
+  </section>
+  <aside class="order-panel"><div class="order-kicker">03 / FINALIZE</div><h2>MAKE IT<br><em>YOURS.</em></h2><div class="summary"><div><span>GARMENT</span><strong id="sumStyle">Half Sleeve</strong></div><div><span>COLOUR</span><strong id="sumColor">Black</strong></div><div><span>SIZE</span><strong id="sumSize">S</strong></div><div><span>PRINT</span><strong id="sumSide">Front</strong></div></div><div class="price"><small>ESTIMATED PRICE</small><strong>₹599</strong></div><button class="order-button" id="addCustom">ADD TO CART <span>＋</span></button><p class="order-note">Your design is saved with the customization details. Final print appearance may vary slightly on fabric.</p><div class="trust"><span>✓</span> Preview before you order<br><span>✓</span> Custom print made for your order</div></aside>
+</section>
+<section class="how-it-works"><p class="eyebrow">04 / SIMPLE PROCESS</p><h2>FROM IDEA TO <em>TEE.</em></h2><div class="process-grid"><div><b>01</b><h3>CHOOSE</h3><p>Select the garment, colour and size.</p></div><div><b>02</b><h3>DESIGN</h3><p>Upload, drag, resize and rotate your artwork.</p></div><div><b>03</b><h3>PREVIEW</h3><p>See your design on the T-shirt before ordering.</p></div><div><b>04</b><h3>CREATE</h3><p>Confirm your customization and place the order.</p></div></div></section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="customizer.js"></script>
+</body></html>

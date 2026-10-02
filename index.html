@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STHĒNŌ STUDIO — fitness, streetwear and custom T-shirts.">
+  <title>STHĒNŌ STUDIO | Built for Strength</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#home"><span class="brand-main">STHĒNŌ</span><span class="brand-sub">STUDIO</span></a>
+  <nav class="desktop-nav" aria-label="Main navigation">
+    <a href="#shop">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="customizer.html">Custom Lab</a>
+    <a href="#story">About</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-button" type="button" aria-label="Search">⌕</button>
+    <button class="cart-button" id="cartButton" type="button">Cart <span id="cartCount">0</span></button>
+    <button class="menu-button" id="menuButton" type="button" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#shop">Shop</a><a href="#categories">Categories</a><a href="customizer.html">Custom Lab</a><a href="#story">About</a>
+</div>
+
+<main id="home">
+  <section class="hero">
+    <div class="hero-media"><div class="hero-ring"></div><div class="hero-product"><span>STHĒNŌ</span><small>STUDIO</small></div></div>
+    <div class="hero-copy">
+      <p class="eyebrow">FITNESS / STREETWEAR</p>
+      <h1>BUILT FOR<br><em>STRENGTH.</em></h1>
+      <p class="hero-text">Performance wear designed to stand out — in the gym and beyond.</p>
+      <a class="primary-button" href="#shop">SHOP THE DROP <span>↗</span></a>
+    </div>
+    <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+  </section>
+
+  <section class="marquee"><div>TRAIN HARD · WEAR STRONG · TRAIN HARD · WEAR STRONG · </div></section>
+
+  <section class="section products-section" id="shop">
+    <div class="section-heading">
+      <div><p class="eyebrow">01 / OVERSIZED TEES</p><h2>THE <em>DROP.</em></h2></div>
+      <span class="collection-note">FRONT ↔ BACK PREVIEW</span>
+    </div>
+
+    <div class="drop-intro"><p>Two statement pieces. One STHĒNŌ mindset.</p><span>SWIPE / CLICK THE ARROWS TO EXPLORE BOTH SIDES</span></div>
+    <div class="product-grid oversized-grid premium-products">
+      <article class="product-card premium-card">
+        <div class="product-card-top"><span>01 / 02</span><span>LIMITED DROP</span></div>
+        <div class="product-image product-switcher" data-product="CYBER RUSH" data-price="599" data-front="assets/products/cyber-front.png" data-back="assets/products/cyber-back.png">
+          <div class="image-noise"></div><div class="image-glow"></div>
+          <span class="product-badge">OVERSIZED / 01</span>
+          <button class="side-arrow left" type="button" aria-label="Show previous side">‹</button>
+          <img class="product-photo" src="assets/products/cyber-front.png" alt="STHĒNŌ CYBER RUSH front">
+          <button class="side-arrow right" type="button" aria-label="Show next side">›</button>
+          <span class="side-label">FRONT</span>
+          <button class="quick-view" type="button">QUICK VIEW <span>↗</span></button>
+        </div>
+        <div class="product-info premium-info"><div><div class="product-kicker">STHĒNŌ / CYBER SERIES</div><h3>CYBER RUSH</h3><p>Futuristic gaming streetwear · Regular fit</p></div><strong>₹599</strong></div>
+        <div class="product-meta"><span>PREMIUM BLACK FABRIC</span><span>FRONT + BACK</span></div>
+        <button class="add-button" data-name="STHĒNŌ: CYBER RUSH" data-price="599" type="button">ADD TO CART <span>+</span></button>
+      </article>
+
+      <article class="product-card premium-card">
+        <div class="product-card-top"><span>02 / 02</span><span>LIMITED DROP</span></div>
+        <div class="product-image product-switcher" data-product="INVASION" data-price="599" data-front="assets/products/invasion-front.png" data-back="assets/products/invasion-back.png">
+          <div class="image-noise"></div><div class="image-glow"></div>
+          <span class="product-badge">OVERSIZED / 02</span>
+          <button class="side-arrow left" type="button" aria-label="Show previous side">‹</button>
+          <img class="product-photo" src="assets/products/invasion-front.png" alt="STHĒNŌ INVASION front">
+          <button class="side-arrow right" type="button" aria-label="Show next side">›</button>
+          <span class="side-label">FRONT</span>
+          <button class="quick-view" type="button">QUICK VIEW <span>↗</span></button>
+        </div>
+        <div class="product-info premium-info"><div><div class="product-kicker">STHĒNŌ / FUTURE ARCHIVE</div><h3>INVASION</h3><p>Retro-futuristic streetwear · Regular fit</p></div><strong>₹599</strong></div>
+        <div class="product-meta"><span>PREMIUM BLACK FABRIC</span><span>FRONT + BACK</span></div>
+        <button class="add-button" data-name="STHĒNŌ: INVASION" data-price="599" type="button">ADD TO CART <span>+</span></button>
+      </article>
+    </div>
+  </section>
+
+  <section class="section categories-section" id="categories">
+    <div class="section-heading"><div><p class="eyebrow">02 / COLLECTIONS</p><h2>SHOP BY <em>CATEGORY.</em></h2></div></div>
+    <div class="category-grid">
+      <a class="category-card category-dark" href="#shop"><span>01</span><h3>OVERSIZED TEES</h3><small>CYBER RUSH · INVASION ↗</small></a>
+      <a class="category-card category-light" href="#shop"><span>02</span><h3>FITNESS WEAR</h3><small>TRAINING ESSENTIALS ↗</small></a>
+      <a class="category-card category-outline" href="#shop"><span>03</span><h3>DAILY WEAR</h3><small>EVERYDAY STHĒNŌ ↗</small></a>
+      <a class="category-card category-accent" href="customizer.html"><span>04</span><h3>CUSTOMIZED T-SHIRTS</h3><small>DESIGN YOUR OWN ↗</small></a>
+    </div>
+  </section>
+
+  <section class="statement-section" id="story">
+    <div class="statement-number">04</div><div class="statement-content"><p class="eyebrow">THE STHENŌ MINDSET</p><h2>BUILT FOR<br><em>STRENGTH.</em></h2><p>STHĒNŌ STUDIO is built around discipline, movement and everyday confidence.</p></div><div class="statement-visual"><div class="monogram">S</div><span>STHĒNŌ<br>STUDIO</span></div>
+  </section>
+</main>
+
+<footer class="footer"><div class="footer-brand"><span class="brand-main">STHĒNŌ</span><span class="brand-sub">STUDIO</span></div><div class="footer-links"><a href="#shop">Shop</a><a href="customizer.html">Custom Lab</a><a href="#story">About</a><a href="https://www.instagram.com/stheno._studio/" target="_blank" rel="noopener">Instagram</a></div><p>© <span id="year"></span> STHĒNŌ STUDIO. ALL RIGHTS RESERVED.</p></footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<div class="modal" id="productModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" type="button" aria-label="Close">×</button>
+    <div class="modal-visual">
+      <button class="modal-side-arrow left" id="modalPrev" type="button" aria-label="Previous side">‹</button>
+      <img id="modalProductImage" src="" alt="Product preview">
+      <button class="modal-side-arrow right" id="modalNext" type="button" aria-label="Next side">›</button>
+      <div class="modal-side-label" id="modalSideLabel">FRONT</div>
+    </div>
+    <div class="modal-details"><p class="eyebrow">OVERSIZED TEE</p><h2 id="modalTitle">STHĒNŌ: CYBER RUSH</h2><p id="modalPrice">₹599</p><p>Premium black oversized streetwear T-shirt. Use the arrows to preview the front and back before ordering.</p><div class="size-row"><button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button></div><button id="modalAdd" class="primary-button full-button" type="button">ADD TO CART <span>+</span></button></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
